@@ -1,0 +1,24 @@
+.greenbox{
+    border: 2px solid green;
+  
+}
+.redbox{
+    border: 2px solid rgb(175, 30, 30);
+}
+
+.red{
+    color:rgb(175, 30, 30);
+}
+.green{
+    color:green;
+}
+.black{
+    color:black;
+}
+
+.blue{
+    color:rgb(87, 87, 248);
+}
+.block{
+    width: 100%;
+}

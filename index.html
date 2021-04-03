@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css"><link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Budget App</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row mx-5">
+            <div class="col-md-12 text-uppercase center-align my-4"><h1>budget app</h1>
+            </div>
+            <br><br><br><br><br>
+            <div class="col-md-4 budgetEntry greenbox my-4">
+                <form action="budgetbox">
+                    <label for="budget">Enter Your Budget:</label><br>
+                    <input type="text" name="budget" id="budget" class="block"><br><br>
+                    <input type="submit" value="Calculate" class="greenbox calculate"><br>
+                </form>
+            </div>
+            <div class="col-md-8 ">
+                <div class="row my-4">
+                <div class="col-md-4 budget text-uppercase text-center ">
+                    <h4>budget</h4>
+                    <i class="fa fa-money fa-4x blue my-3" aria-hidden="true"></i>
+                    <br>
+                    <h3 class="green">$ <span>0</span></h3>
+                    
+                </div>
+                <div class="col-md-4 expense text-uppercase text-center">
+                    <h4>expense</h4>
+                    <i class="fa fa-credit-card fa-4x blue my-3" aria-hidden="true"></i>
+                    <br>
+                    <h3 class="red">$ <span>0</span></h3>
+                    
+                </div>
+                <div class="col-md-4 balance text-uppercase text-center">
+                    <h4>balance</h4>
+                    <i class="fa fa-usd fa-4x blue my-3" aria-hidden="true"></i>
+                    <br>
+                    <h3 class="black">$ <span>0</span></h3>
+                    
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 budgetExpense redbox my-4">
+            
+                <form action="expensebox">
+                    <label for="expense_name">Enter your Expense</label><br>
+                    <input type="text" name="expense_name" id="expense_name" class="block"><br>
+                    <label for="expense_amount">Enter the Expense</label><br>
+                    <input type="text" name="expense_amount" id="expense_amount" class="block"><br><br>
+                    <input type="submit" value="Add Expense"class="redbox">
+                </form>
+            </div>
+            <div class="col-md-8 ">
+                <div class="row my-4">
+                <div class="col-md-6 expenseTitle text-uppercase text-center"><h4>Expense Title</h4>
+                
+                </div>
+                <div class="col-md-6 expenseValue text-uppercase text-center"><h4>Expense Value</h4>
+                
+                </div>
+                <div class="list-item"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
